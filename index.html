@@ -62,6 +62,9 @@
   .lang-both .sub .en { display: block; font-size: .8em; margin-top: 4px; }
   .lang-both .hero-meta span.en { display: none; }
   .lang-both .lang { display: none; }
+  .lang-both .urg span.en { display: block; font-style: italic; margin-top: 2px; }
+  .lang-both .bonus.en { border-top: 0; margin-top: -1px; padding-top: 0; font-style: italic; }
+  .lang-both .bonus.en b { display: none; }
 
   .todo {
     background: var(--todo-bg); font-style: normal; padding: 0 .3em;
@@ -319,7 +322,12 @@
     .wifi .val { font-size: 15pt; }
     .qr { width: 30mm; height: 30mm; }
     .urg b { font-size: 20pt; }
-    .appl { grid-template-columns: 28mm minmax(0, 1fr); gap: 8mm; break-inside: avoid; }
+    .appl { grid-template-columns: 30mm minmax(0, 1fr); gap: 7mm; break-inside: avoid; }
+    .shots { grid-template-columns: 1fr !important; gap: 2mm; width: 30mm; }
+    .shot { width: 30mm; max-width: 30mm; }
+    .appl > .body { min-width: 0; }
+    ol.steps li { padding-left: 9mm; }
+    ol.steps li::before { width: 7mm; }
     .appl > .body > * + * { margin-top: 6pt; }
     .shot { padding: 2mm; }
     .shot-cap { font-size: 7pt; }
